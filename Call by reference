@@ -1,0 +1,15 @@
+#include <stdio.h>
+void main()
+{
+    int a;
+    printf ("Enter the number :");
+    scanf("%d",&a);
+    printf ("\ngiven no :%d",a);
+    inc (&a);
+    printf("\nafter increment %d",a);
+}
+  void inc (int *a)
+  {
+      *a=*a+1;
+      printf("\nincrement value is %d",*a);
+  }
